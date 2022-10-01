@@ -26,7 +26,7 @@ int[] GetRandomArray(int lenght, int minValue, int maxValue)
     int[] result = new int[lenght];
     for (int i = 0; i < result.Length; i++)
     {
-        result[i] = rnd.Next(minValue, maxValue);
+        result[i] = rnd.Next(minValue, maxValue + 1);
     }
     return result;
 }
